@@ -1,0 +1,30 @@
+﻿  Boolean.cpp
+  IndentationException.cpp
+  Integer.cpp
+  InterperterException.cpp
+  List.cpp
+  The contents of <format> are available only in c++latest mode with concepts support;
+  see https://github.com/microsoft/STL/issues/1814 for details.
+  Mython.cpp
+  The contents of <format> are available only in c++latest mode with concepts support;
+  see https://github.com/microsoft/STL/issues/1814 for details.
+  NameException.cpp
+  The contents of <format> are available only in c++latest mode with concepts support;
+  see https://github.com/microsoft/STL/issues/1814 for details.
+  Parser.cpp
+  The contents of <format> are available only in c++latest mode with concepts support;
+  see https://github.com/microsoft/STL/issues/1814 for details.
+C:\Users\kids\Mython\MythonC++\Mython\Parser.cpp(93,39): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\kids\Mython\MythonC++\Mython\Parser.cpp(148,41): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\kids\Mython\MythonC++\Mython\Parser.cpp(150,39): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\kids\Mython\MythonC++\Mython\Parser.cpp(151,49): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\kids\Mython\MythonC++\Mython\Parser.cpp(152,45): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\kids\Mython\MythonC++\Mython\Parser.cpp(307,23): warning C4101: 'e': unreferenced local variable
+  Sequence.cpp
+  String.cpp
+C:\Users\kids\Mython\MythonC++\Mython\String.cpp(34,31): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  SyntaxException.cpp
+  Type.cpp
+  Void.cpp
+  Generating Code...
+  Mython.vcxproj -> C:\Users\kids\Mython\MythonC++\x64\Debug\MythonC++.exe

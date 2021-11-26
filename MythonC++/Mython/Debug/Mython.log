@@ -1,0 +1,35 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Mython.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Boolean.cpp
+  IndentationException.cpp
+  Integer.cpp
+  InterperterException.cpp
+  List.cpp
+  The contents of <format> are available only in c++latest mode with concepts support;
+  see https://github.com/microsoft/STL/issues/1814 for details.
+C:\Users\kids\source\repos\Mython\Mython\List.cpp(49,20): warning C4018: '<': signed/unsigned mismatch
+  Mython.cpp
+  The contents of <format> are available only in c++latest mode with concepts support;
+  see https://github.com/microsoft/STL/issues/1814 for details.
+  NameException.cpp
+  The contents of <format> are available only in c++latest mode with concepts support;
+  see https://github.com/microsoft/STL/issues/1814 for details.
+  Parser.cpp
+  The contents of <format> are available only in c++latest mode with concepts support;
+  see https://github.com/microsoft/STL/issues/1814 for details.
+C:\Users\kids\source\repos\Mython\Mython\Parser.cpp(24,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\kids\source\repos\Mython\Mython\Parser.cpp(36,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\kids\source\repos\Mython\Mython\Parser.cpp(39,18): warning C4018: '<': signed/unsigned mismatch
+C:\Users\kids\source\repos\Mython\Mython\Parser.cpp(67,18): warning C4018: '<': signed/unsigned mismatch
+C:\Users\kids\source\repos\Mython\Mython\Parser.cpp(72,18): warning C4018: '<': signed/unsigned mismatch
+C:\Users\kids\source\repos\Mython\Mython\Parser.cpp(77,18): warning C4018: '<': signed/unsigned mismatch
+C:\Users\kids\source\repos\Mython\Mython\Parser.cpp(95,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\kids\source\repos\Mython\Mython\Parser.cpp(125,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\kids\source\repos\Mython\Mython\Parser.cpp(307,23): warning C4101: 'e': unreferenced local variable
+  Sequence.cpp
+  String.cpp
+C:\Users\kids\source\repos\Mython\Mython\String.cpp(44,20): warning C4018: '<': signed/unsigned mismatch
+  SyntaxException.cpp
+  Type.cpp
+  Void.cpp
+  Generating Code...
+  Mython.vcxproj -> C:\Users\kids\source\repos\Mython\Debug\MythonC++.exe
