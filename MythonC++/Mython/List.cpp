@@ -36,7 +36,12 @@ string List::GetOriginalList()
 
 string List::GetType()
 {
-	return "<type \'list\'>";
+	return TYPE_LIST;
+}
+
+int List::Len()
+{
+	return this->values.size();
 }
 
 string List::ToString()

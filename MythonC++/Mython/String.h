@@ -2,6 +2,8 @@
 
 #include "Sequence.h"
 
+#define TYPE_STR "<type \'str\'>"
+
 class String : public Sequence
 {
 private:
@@ -18,6 +20,6 @@ public:
 	void SetValue(string value);
 	String* Clone();
 	string GetType();
-
+	int Len();
 };
 

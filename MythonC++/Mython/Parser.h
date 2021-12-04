@@ -44,6 +44,7 @@ public:
 	static void PrintType(string command);
 	static bool IsDeleteStatement(string command);
 	static void Delete(string command);
-	
+	static bool IsLenStatement(string command);
+	static void Len(string command);
 };
 

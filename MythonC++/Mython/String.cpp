@@ -78,5 +78,10 @@ String* String::Clone()
 
 string String::GetType()
 {
-	return "<type \'str\'>";
+	return TYPE_STR;
+}
+
+int String::Len()
+{
+	return this->value.length() - 2;
 }

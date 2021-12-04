@@ -239,13 +239,26 @@ Type* Parser::ParseString(string command)
         }
     }
 
-    bool isTypeStatement = IsTypeStatement(command);
-
-    if (isTypeStatement) // If the command is "type(value)".
+    if (IsTypeStatement(command)) // If the command is "type(value)".
     {
         PrintType(command);
         return NULL;
     }
+
+    if (IsLenStatement(command))
+    {
+        try
+        {
+            Len(command);
+            return NULL;
+        }
+        catch (InterperterException& e)
+        {
+            cout << e.what() << endl;
+            return NULL;
+        } 
+    }
+
     bool isAssignment =  MakeAssignment(command);
     bool isValuePrint = IsValuePrint(command);
 
@@ -544,3 +557,57 @@ void Parser::Delete(string command)
     variables.erase(varName);
 }
 
+/// <summary>
+/// This function checks if a statement is a length statement.
+/// </summary>
+/// <param name="command"></param>
+/// <returns></returns>
+bool Parser::IsLenStatement(string command)
+{
+    if (command.length() < 4)
+        return false;
+    return command.substr(0, 4) == "len(";
+}
+
+/// <summary>
+/// This function finds the length of a given variables.
+/// If the variable is not a string or a list, the function will throw an exception.
+/// </summary>
+/// <param name="command"></param>
+void Parser::Len(string command)
+{
+    string value = command.substr(4);
+    value = value.substr(0, value.length() - 1);
+    value = RemoveSpaces(value);
+    Type* t;
+
+    if (IsVariableName(value)) // If the argument is an existing variable.
+        t = variables[value];
+
+    else // If the argument is a value.
+    {
+        try
+        {
+            t = GetType(value);
+        }
+        catch (InterperterException &e)
+        {
+            cout << e.what();
+            return;
+        }
+    }
+    
+    if (t->GetType() == TYPE_LIST) // If the value is a list.
+    {
+        List* list = dynamic_cast<List*>(t);
+        cout << list->Len() << endl;
+    }
+
+    else if (t->GetType() == TYPE_STR) // If the value is a string.
+    {
+        String* str = dynamic_cast<String*>(t);
+        cout << str->Len() << endl;
+    }
+    else // The value isn't string nor a list, so the function will throw an exception.
+        throw SyntaxException();
+}

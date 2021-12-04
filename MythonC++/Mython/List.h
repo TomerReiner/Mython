@@ -6,6 +6,8 @@
 #include "Parser.h"
 #include "InterperterException.h"
 
+# define TYPE_LIST "<type \'list\'>"
+
 using namespace std;
 
 class List : public Sequence
@@ -23,5 +25,6 @@ public:
 	List* Clone();
 	string GetOriginalList();
 	string GetType();
+	int Len();
 };
 
